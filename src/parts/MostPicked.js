@@ -15,7 +15,7 @@ const MostPicked = (props) => {
                 key={`mostpicked-${index}`}
                 className={`item column-4${index === 0 ? " row-2" : " row-1"}`}
               >
-                <Fade bottom delay={500 * index}>
+                <Fade bottom delay={300 * index}>
                   <div className="card card-featured">
                     <div className="tag">
                       ${item.price}
