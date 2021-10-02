@@ -6,7 +6,6 @@ import "./index.scss";
 
 const Numbering = ({ style, className, data, current }) => {
   const KeysOfData = Object.keys(data);
-
   return (
     <Fade>
       <ol className={["stepper", className].join(" ")} style={style}>

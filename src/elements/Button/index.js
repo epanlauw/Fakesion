@@ -8,6 +8,7 @@ const Button = (props) => {
 
   if (props.isPrimary) className.push("btn-primary");
   if (props.isLarge) className.push("btn-lg");
+  if (props.isLight) className.push("btn-light");
   if (props.isSmall) className.push("btn-sm");
   if (props.isBlock) className.push("btn-block");
   if (props.hasShadow) className.push("btn-shadow");
@@ -73,7 +74,7 @@ const Button = (props) => {
 export default Button;
 
 Button.propTypes = {
-  type: propTypes.oneOf(["bytton", "link"]),
+  type: propTypes.oneOf(["button", "link"]),
   onClick: propTypes.func,
   target: propTypes.string,
   href: propTypes.string,
@@ -81,6 +82,7 @@ Button.propTypes = {
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
+  isLight: propTypes.bool,
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
   isExternal: propTypes.bool,
