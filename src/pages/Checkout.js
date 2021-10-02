@@ -118,10 +118,10 @@ export default class Checkout extends Component {
                     )}
                   <Button
                     className="btn"
-                    type="button"
+                    type="link"
                     isBlock
                     isLight
-                    onClick={`/properties/${ItemDetails._id}`}
+                    href={`/properties/${ItemDetails._id}`}
                   >
                     Cancel
                   </Button>
