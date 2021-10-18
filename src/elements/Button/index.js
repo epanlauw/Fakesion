@@ -37,6 +37,7 @@ const Button = (props) => {
   if (props.type === "link") {
     if (props.isExternal) {
       return (
+        // eslint-disable-next-line react/jsx-no-target-blank
         <a
           href={props.href}
           className={className.join(" ")}
